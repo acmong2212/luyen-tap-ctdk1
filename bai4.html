@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham Duc Thang</title>
+</head>
+<body>
+<label><input type="text" id="so1"></label>
+<label><input type="text" id="so2"></label>
+<label><input type="text" id="so3"></label>
+<button onclick="number()">Ket qua</button>
+<p id="ketqua"></p>
+</body>
+<script>
+    function number() {
+        let number = +document.getElementById('so1').value;
+        let number1 = +document.getElementById('so2').value;
+        let number2 = +document.getElementById('so3').value;
+        if (number > number1 && number > number2)
+            document.getElementById('ketqua').innerHTML = "so lon nhat la : " + number
+        else if (number1 > number2)
+            document.getElementById('ketqua').innerHTML = "so lon nhat la :" + number1
+        else
+            document.getElementById('ketqua').innerHTML = "so lon nhat la :" + number2
+    }
+</script>
+</html>

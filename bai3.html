@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham Duc Thang</title>
+</head>
+<body>
+<input type="text" id="so">
+<button onclick="number()">Ket qua</button>
+<p id="kq"></p>
+</body>
+<script>
+    function number() {
+        let number1 = document.getElementById('so').value;
+        if (number1 >= 0) {
+            alert('So nay lon hon 0')
+        } else alert("So nay nho hon 0")
+    }
+</script>
+</html>
